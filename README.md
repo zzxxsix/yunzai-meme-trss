@@ -13,7 +13,7 @@ git clone  https://github.com/zzxxsix/yunzai-meme-trss.git
 ```
 gitee:
 ```
-git clone  https://github.com/zzxxsix/yunzai-meme-trss.git
+git clone  https://gitee.com/zzxxsix/yunzai-meme-trss.git
 
 ```
 把js文件放到`Yunzai/plugins/example`里即可食用
