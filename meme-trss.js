@@ -330,7 +330,7 @@ export class memes extends plugin {
         const arrayBuffer = await blob.arrayBuffer()
         const buffer = Buffer.from(arrayBuffer)
         await fs.writeFileSync(fileLoc, buffer)
-        formData.append('images', new File([buffer], `avatar_${i}.gif`, { type: 'image/jpeg' }))
+        formData.append('images', new File([buffer], `avatar_${i}.jpg`, { type: 'image/jpeg' }))
       }
     }
 	
@@ -393,7 +393,7 @@ export class memes extends plugin {
       return true
     }
     mkdirs('data/memes/result')
-    let resultFileLoc = `data/memes/result/${Date.now()}.gif`
+    let resultFileLoc = `data/memes/result/${Date.now()}.jpg`
     const resultBlob = await response.blob()
     const resultArrayBuffer = await resultBlob.arrayBuffer()
     const resultBuffer = Buffer.from(resultArrayBuffer)
