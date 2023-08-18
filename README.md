@@ -1,6 +1,6 @@
 # yunzai-meme-trss  
 
-yunzai的meme表情包合成插件已适配到trss频道，缺点是无法发动态图  
+yunzai的meme表情包合成插件已适配到trss频道，缺点是手机的需要点开图片，点查看原图才是动图  
 
 yunzai的meme表情包合成插件仓库：[☞Github](https://github.com/ikechan8370/yunzai-meme)/[☞Gitee](https://gitee.com/ikechan/yunzai-meme)
 
