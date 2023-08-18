@@ -294,7 +294,7 @@ export class memes extends plugin {
         // 如果都没有，用发送者的头像
         imgUrls = [e.author.avatar]
       }
-	  console.log(imgUrls)
+
       if ((imgUrls.length < info.params.min_images) && imgUrls.indexOf(e.author.avatar) === -1) {
         // 如果数量不够，补上发送者头像，且放到最前面
         let me = [e.author.avatar]
@@ -302,15 +302,13 @@ export class memes extends plugin {
         if (targetCode === 'do' && masterProtectDo) {
           let masters = await getMasterQQ()
           if (imgUrls[0]) {
-            let split = imgUrls[0].split('=')
-            let targetQQ = split[split.length - 1]
-            if (masters.map(q => q + '').indexOf(targetQQ) > -1) {
+			let targetQQ = masters[0].split("_")[1];
+            if (e.content.indexOf(targetQQ)!=-1) {
               imgUrls = imgUrls.concat(me)
               done = true
             }
           }
         }
-		console.log(imgUrls)
         if (!done) {
           imgUrls = me.concat(imgUrls)
         }
